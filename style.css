@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap");
+
+:root {
+  --change: 1s;
+  --color-zero: var(--color-ten);
+  --color-one: #c64c0a;
+  --color-two: #c6780a;
+  --color-tree: #bcc60a;
+  --color-four: #13c60a;
+  --color-five: #0ac6aa;
+  --color-six: #0a7ec6;
+  --color-seven: #0a26c6;
+  --color-eight: #650ac6;
+  --color-nine: #c60abc;
+  --color-ten: #c60a0a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  animation-name: ColorCycle;
+  animation-duration: var(--change);
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+main {
+  height: 100vh;
+  margin-left: 20px;
+}
+#customize {
+  background-color: #0a0b0d;
+  border-bottom: 0;
+  border-radius: 0 0 20px 20px;
+
+  padding: 0 15px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  height: fit-content;
+  width: fit-content;
+}
+.colors {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+
+  &:nth-child(10) {
+    margin-bottom: 0;
+  }
+}
+.colorpreview {
+  height: 35px;
+  width: 35px;
+  border: 3px solid #2d3540;
+  border-radius: 5px;
+}
+.colors input {
+  background-color: #1c2026;
+  color: #a4a5a6;
+  border: 3px solid #2d3540;
+
+  border-radius: 5px;
+  height: 35px;
+  width: 120px;
+  padding: 5px;
+}
+#colorsmain {
+  background-color: #1c2026;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  height: fit-content;
+}
+#velocity {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: #1c2026;
+  border-radius: 10px;
+  height: fit-content;
+}
+#griditem1 {
+  grid-area: 1 / 1 / 3 / 2;
+}
+#griditem3 {
+  grid-area: 2 / 2 / 3 / 3;
+  background-color: #0a0b0d;
+  border-top: 10px solid #0a0b0d;
+  border-left: 10px solid #0a0b0d;
+  border-radius: 10px 0 10px 0;
+}
+#griditem3 button {
+  background-color: #1c2026;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+}
+#griditem2 {
+  grid-area: 1 / 2 / 2 / 3;
+  color: #a4a5a6;
+}
+#griditem1,
+#griditem2,
+#griditem3 {
+  background-color: #0a0b0d;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #a4a5a6;
+}
+#coverdiv2 {
+  border-radius: 0 10px 10px 0;
+}
+#coverdiv1 {
+  border-radius: 10px 0 10px 10px;
+  padding: 10px;
+}
+#coverdiv1,
+#coverdiv2 {
+  width: 100%;
+  height: 100%;
+  background-color: #1c2026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hidebutton {
+  padding: 15px;
+  background-color: #1c2026;
+  border-radius: 10px;
+  border: none;
+}
+#colorp1 {
+  background-color: var(--color-one);
+}
+#colorp2 {
+  background-color: var(--color-two);
+}
+#colorp3 {
+  background-color: var(--color-tree);
+}
+#colorp4 {
+  background-color: var(--color-four);
+}
+#colorp5 {
+  background-color: var(--color-five);
+}
+#colorp6 {
+  background-color: var(--color-six);
+}
+#colorp7 {
+  background-color: var(--color-seven);
+}
+#colorp8 {
+  background-color: var(--color-eight);
+}
+#colorp9 {
+  background-color: var(--color-nine);
+}
+#colorp10 {
+  background-color: var(--color-ten);
+}
+
+@keyframes ColorCycle {
+  0% {
+    background-color: var(--color-zero);
+  }
+  10% {
+    background-color: var(--color-one);
+  }
+  20% {
+    background-color: var(--color-two);
+  }
+  30% {
+    background-color: var(--color-tree);
+  }
+  40% {
+    background-color: var(--color-four);
+  }
+  50% {
+    background-color: var(--color-five);
+  }
+  60% {
+    background-color: var(--color-six);
+  }
+  70% {
+    background-color: var(--color-seven);
+  }
+  80% {
+    background-color: var(--color-eight);
+  }
+  90% {
+    background-color: var(--color-nine);
+  }
+  100% {
+    background-color: var(--color-ten);
+  }
+}
