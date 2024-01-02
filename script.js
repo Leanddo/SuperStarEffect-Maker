@@ -66,9 +66,12 @@ function infobar() {
 
   if (Open) {
     infobox.style.right = "-500px";
-  } else {
-    infobox.style.right = "10px";
+    setTimeout( function(){infobox.style.display = "none"}, 900);
+
+  }else{
+    infobox.style.display = "flex"
+    setTimeout( function(){infobox.style.right = "10px";}, 1); 
   }
   Open = !Open;
-}
 
+}

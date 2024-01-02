@@ -237,7 +237,7 @@ input:focus {
   background-image: url(img/infobox.svg);
   background-size: cover;
 
-  transition: all 1s ease-in-out;
+  transition: right 1s ease-in-out;
 
   & li{
     font-family: "Press Start 2P";
@@ -247,7 +247,6 @@ input:focus {
     font-family: "Press Start 2P";
   }
 }
-
 
 #colorp1 {
   background-color: var(--color-one);
