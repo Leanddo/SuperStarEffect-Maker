@@ -13,14 +13,12 @@ function velocity() {
 
 function updatecolor(color, variable) {
   root.style.setProperty(color, variable);
-  console.log(inputs);
 }
 
 var navbarOpen = false;
 
 function toggleNav() {
   let pipe = document.getElementById("pipe");
-  let pconfigs = document.getElementById("pconfigs");
 
   if (navbarOpen) {
     pipe.style.top = "-610px";
@@ -36,10 +34,10 @@ var i = 0;
 starbutton.onclick = function () {
   i++;
 
-  if (i == 3) {
+  if (i%3==0) {
     document.getElementById("musicblock").style.display = "block";
     document.getElementById("player").play();
-  } else if (i == 6) {
+  } else if (i%3==1) {
     document.getElementById("musicblock").style.display = "none";
     document.getElementById("player").pause();
   }
@@ -60,3 +58,17 @@ function offaudio() {
   }
   audio = !audio;
 }
+
+var Open = false;
+
+function infobar() {
+  let infobox = document.getElementById("infobox");
+
+  if (Open) {
+    infobox.style.right = "-500px";
+  } else {
+    infobox.style.right = "10px";
+  }
+  Open = !Open;
+}
+
