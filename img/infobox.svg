@@ -1,0 +1,36 @@
+<svg width="470" height="160" viewBox="0 0 470 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="460" height="158" fill="#41D83D"/>
+<path d="M460 2H461V3H460V2Z" fill="#009F00"/>
+<path d="M458 1H460V3H458V1Z" fill="#009F00"/>
+<rect x="458" y="3" width="3" height="155" fill="#009F00"/>
+<rect x="2" y="158" width="458" height="1" fill="#009F00"/>
+<rect x="1" y="157" width="1" height="1" fill="#009F00"/>
+<rect y="2" width="1" height="156" fill="black"/>
+<rect x="461" y="2" width="1" height="156" fill="black"/>
+<rect x="2" width="458" height="1" fill="black"/>
+<rect x="2" y="159" width="458" height="1" fill="black"/>
+<path d="M461 0V2H460V0L461 0Z" fill="black"/>
+<path d="M462 1V2H460V1L462 1Z" fill="black"/>
+<path d="M461 160V158H460V160H461Z" fill="black"/>
+<path d="M462 159V158H460V159H462Z" fill="black"/>
+<path d="M0 1H2V2H0V1Z" fill="black"/>
+<path d="M1 0H2V2H1V0Z" fill="black"/>
+<path d="M1 160L1 158H2V160H1Z" fill="black"/>
+<path d="M0 159L0 158H2V159H0Z" fill="black"/>
+<path d="M7 2H3V3H2V7H3V8H7V7H8V3H7V2Z" fill="black"/>
+<path d="M6 3H4V4H3V6H4V7H6V6H7V4H6V3Z" fill="#93FCEE"/>
+<rect x="4" y="5" width="1" height="1" fill="black"/>
+<rect x="5" y="4" width="1" height="1" fill="black"/>
+<path d="M459 2H455V3H454V7H455V8H459V7H460V3H459V2Z" fill="black"/>
+<path d="M458 3H456V4H455V6H456V7H458V6H459V4H458V3Z" fill="#93FCEE"/>
+<rect x="456" y="5" width="1" height="1" fill="black"/>
+<rect x="457" y="4" width="1" height="1" fill="black"/>
+<path d="M459 152H455V153H454V157H455V158H459V157H460V153H459V152Z" fill="black"/>
+<path d="M458 153H456V154H455V156H456V157H458V156H459V154H458V153Z" fill="#93FCEE"/>
+<rect x="456" y="155" width="1" height="1" fill="black"/>
+<rect x="457" y="154" width="1" height="1" fill="black"/>
+<path d="M7 152H3V153H2V157H3V158H7V157H8V153H7V152Z" fill="black"/>
+<path d="M6 153H4V154H3V156H4V157H6V156H7V154H6V153Z" fill="#93FCEE"/>
+<rect x="4" y="155" width="1" height="1" fill="black"/>
+<rect x="5" y="154" width="1" height="1" fill="black"/>
+</svg>

@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 
 :root {
-  --change: 1s;
-  --color-zero: var(--color-ten);
   --color-one: #c64c0a;
   --color-two: #c6780a;
   --color-tree: #bcc60a;
@@ -13,6 +12,11 @@
   --color-eight: #650ac6;
   --color-nine: #c60abc;
   --color-ten: #c60a0a;
+  --color-zero: var(--color-ten);
+  --light-green: #46fe3a;
+  --dark-green: #009f00;
+  --black: #000101;
+  --change: 1s;
 }
 
 * {
@@ -30,12 +34,18 @@ body {
 }
 main {
   height: 100vh;
-  margin-left: 20px;
+}
+#pipe {
+  position: relative;
+  margin-left: 40px;
+  width: fit-content;
+  height: 100vh;
+  transition: top 1s ease;
 }
 #customize {
-  background-color: #0a0b0d;
-  border-bottom: 0;
-  border-radius: 0 0 20px 20px;
+  background-image: url(img/pipe.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 
   padding: 0 15px 15px;
 
@@ -72,7 +82,7 @@ main {
   padding: 5px;
 }
 #colorsmain {
-  background-color: #1c2026;
+  background-color: var(--light-green);
   padding: 10px;
   border-radius: 0 0 10px 10px;
   height: fit-content;
@@ -81,7 +91,7 @@ main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  background-color: #1c2026;
+  background-color: var(--light-green);
   border-radius: 10px;
   height: fit-content;
 }
@@ -90,26 +100,22 @@ main {
 }
 #griditem3 {
   grid-area: 2 / 2 / 3 / 3;
-  background-color: #0a0b0d;
-  border-top: 10px solid #0a0b0d;
-  border-left: 10px solid #0a0b0d;
+  background-color: rgba(0, 128, 0, 0);
+  border-top: 10px solid rgba(0, 128, 0, 0);
+  border-left: 10px solid rgba(0, 128, 0, 0);
   border-radius: 10px 0 10px 0;
 }
-#griditem3 button {
-  background-color: #1c2026;
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 10px;
+button img {
+  width: fit-content;
 }
 #griditem2 {
   grid-area: 1 / 2 / 2 / 3;
-  color: #a4a5a6;
+  border-top-right-radius: 10px;
 }
 #griditem1,
 #griditem2,
 #griditem3 {
-  background-color: #0a0b0d;
+  background-color: var(--dark-green);
 }
 
 input:focus {
@@ -127,17 +133,122 @@ input:focus {
 #coverdiv2 {
   width: 100%;
   height: 100%;
-  background-color: #1c2026;
+  background-color: var(--light-green);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 #hidebutton {
-  padding: 15px;
-  background-color: #1c2026;
-  border-radius: 10px;
+  background: url(img/pipetop.svg) no-repeat;
+  background-size: cover;
   border: none;
+  background-color: #000101;
+  width: 240px;
+  height: 67px;
+  position: relative;
+  bottom: 7px;
+  right: 11px;
+  cursor: pointer;
+  clip-path: polygon(0 6%, 100% 6%, 100% 100%, 0 100%);
 }
+#percentage {
+  font-family: "Press Start 2P";
+}
+#box {
+  position: absolute;
+  background-image: url(img/rivets.svg);
+  background-size: cover;
+  height: 170px;
+  width: 300px;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#box p {
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  width: 120px;
+}
+#star {
+  height: 100px;
+  width: 100px;
+}
+#pconfigs{
+  position: absolute;
+  font-family: "Press Start 2P";
+  font-size: 20px;
+  transform: rotate(90deg);
+  left: 110px;
+  top: 130px;
+}
+#musicblock{
+  display: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+
+  width: 30px;
+  height: 30px;
+  border:none;
+  background: none;
+}
+#musicblock img{
+  width: 100%;
+  height: 100%;
+}
+#secret{
+  height: fit-content;
+  width: fit-content;
+  border: none;
+  background: none;
+}
+
+#question{
+  background-color: var(--light-green);
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 10px;
+
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+#question img{
+  width: 90%;
+  height: 90%;
+  border-radius: 5px 
+}
+#infobox{
+  position: absolute;
+  bottom: 10px;
+  right: -500px;
+  padding: 20px;
+  padding-right: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content:center;
+  align-items: center;
+
+  background-image: url(img/infobox.svg);
+  background-size: cover;
+
+  transition: all 1s ease-in-out;
+
+  & li{
+    font-family: "Press Start 2P";
+    font-size: 10px;
+  }
+  & h2{
+    font-family: "Press Start 2P";
+  }
+}
+
+
 #colorp1 {
   background-color: var(--color-one);
 }
