@@ -8,65 +8,77 @@
   </head>
   <body>
     <main>
-      <div id="customize">
-        <div id="colorsmain">
-          <div class="colors">
-            <div class="colorpreview" id="colorp1"></div>
-            <input type="text" value="#c60a0a" id="inp1" oninput="updatecolor('--color-one',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp2" ></div>
-            <input type="text"value="#c6780a" id="inp2" oninput="updatecolor('--color-two',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp3" ></div>
-            <input type="text" value="#bcc60a" id="inp3" oninput="updatecolor('--color-tree',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp4" ></div>
-            <input type="text" value="#13c60a" id="inp4" oninput="updatecolor('--color-four',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp5" ></div>
-            <input type="text" value="#0ac6aa" id="inp5" oninput="updatecolor('--color-five',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp6" ></div>
-            <input type="text"value="#0a7ec6" id="inp6" oninput="updatecolor('--color-six',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp7" ></div>
-            <input type="text" value="#0a26c6" id="inp7" oninput="updatecolor('--color-seven',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp8" ></div>
-            <input type="text" value="#650ac6" id="inp8" oninput="updatecolor('--color-eight',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp9" ></div>
-            <input type="text" value="#c60abc" id="inp9" oninput="updatecolor('--color-nine',this.value)" />
-          </div>
-          <div class="colors">
-            <div class="colorpreview" id="colorp10" ></div>
-            <input type="text" value="#c60a0a" id="inp10" oninput="updatecolor('--color-ten',this.value)" />
-          </div>
+      <div id="box">
+        <div>
+          <p>Super Star Efect</p>
+          <p>Maker</p>
         </div>
-        <div id="velocity">
-          <div id="griditem1">
-            <div id="coverdiv1">
-              <input type="range" orient="vertical" min="1" max="25" value="25" id="slider" oninput="velocity()" />
+        <button id="secret"><img id="star" src="img/star.svg"></button>
+        <audio id="player" src="img/SuperStar.mp3"></audio>
+      </div>
+      <button id="musicblock" onclick="offaudio()" ><img id="musicblockimg" src="img/musicblock.svg"></button>
+      <div id="pipe">
+        <div id="customize">
+          <div id="colorsmain">
+            <div class="colors">
+              <div class="colorpreview" id="colorp1"></div>
+              <input type="text" value="#c60a0a" id="inp1" oninput="updatecolor('--color-one',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp2" ></div>
+              <input type="text"value="#c6780a" id="inp2" oninput="updatecolor('--color-two',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp3" ></div>
+              <input type="text" value="#bcc60a" id="inp3" oninput="updatecolor('--color-tree',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp4" ></div>
+              <input type="text" value="#13c60a" id="inp4" oninput="updatecolor('--color-four',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp5" ></div>
+              <input type="text" value="#0ac6aa" id="inp5" oninput="updatecolor('--color-five',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp6" ></div>
+              <input type="text"value="#0a7ec6" id="inp6" oninput="updatecolor('--color-six',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp7" ></div>
+              <input type="text" value="#0a26c6" id="inp7" oninput="updatecolor('--color-seven',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp8" ></div>
+              <input type="text" value="#650ac6" id="inp8" oninput="updatecolor('--color-eight',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp9" ></div>
+              <input type="text" value="#c60abc" id="inp9" oninput="updatecolor('--color-nine',this.value)" />
+            </div>
+            <div class="colors">
+              <div class="colorpreview" id="colorp10" ></div>
+              <input type="text" value="#c60a0a" id="inp10" oninput="updatecolor('--color-ten',this.value)" />
             </div>
           </div>
-          <div id="griditem2">
-            <div id="coverdiv2">
-              <p id="percentage" >100</p><span>%</span>
+          <div id="velocity">
+            <div id="griditem1">
+              <div id="coverdiv1">
+                <input type="range" orient="vertical" min="1" max="25" value="25" id="slider" oninput="velocity()" />
+              </div>
+            </div>
+            <div id="griditem2">
+              <div id="coverdiv2">
+                <p id="percentage" >100</p><span>%</span>
+              </div>
+            </div>
+            <div id="griditem3">
+              <button onclick="updatecolor()" ><img src="img/restart.svg" /></button>
             </div>
           </div>
-          <div id="griditem3">
-            <button onclick="updatecolor()" ><img src="img/restart.svg" /></button>
-          </div>
         </div>
-        <button id="hidebutton"><img src="img/arrow.svg" /></button>
+        <button id="hidebutton" onclick="toggleNav()" ></button>
+        <p id="pconfigs">Configurations</p>
       </div>
     </main>
     <script src="script.js"></script>

@@ -1,0 +1,41 @@
+<svg width="105" height="56" viewBox="0 0 105 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="1" y="1" width="95" height="54" fill="#41D83D"/>
+<path d="M95 2H96V3H95V2Z" fill="#009F00"/>
+<path d="M93 1H95V3H93V1Z" fill="#009F00"/>
+<rect x="93" y="3" width="3" height="51" fill="#009F00"/>
+<rect x="2" y="54" width="93" height="1" fill="#009F00"/>
+<rect x="1" y="53" width="1" height="1" fill="#009F00"/>
+<path d="M96 10H105V54H96V10Z" fill="black"/>
+<path d="M96 8H104V9H96V8Z" fill="black"/>
+<path d="M96 9H105V10H96V9Z" fill="black"/>
+<path d="M96 54H105V55H96V54Z" fill="black"/>
+<path d="M97 55H105V56H97V55Z" fill="black"/>
+<rect y="2" width="1" height="52" fill="black"/>
+<rect x="96" y="2" width="1" height="52" fill="black"/>
+<rect x="2" width="93" height="1" fill="black"/>
+<rect x="2" y="55" width="93" height="1" fill="black"/>
+<path d="M96 0V2H95V0L96 0Z" fill="black"/>
+<path d="M97 1V2H95V1L97 1Z" fill="black"/>
+<path d="M96 56V54H95V56H96Z" fill="black"/>
+<path d="M97 55V54H95V55H97Z" fill="black"/>
+<path d="M0 1H2V2H0V1Z" fill="black"/>
+<path d="M1 0H2V2H1V0Z" fill="black"/>
+<path d="M1 56L1 54H2V56H1Z" fill="black"/>
+<path d="M0 55L0 54H2V55H0Z" fill="black"/>
+<path d="M7 2H3V3H2V7H3V8H7V7H8V3H7V2Z" fill="black"/>
+<path d="M6 3H4V4H3V6H4V7H6V6H7V4H6V3Z" fill="#93FCEE"/>
+<rect x="4" y="5" width="1" height="1" fill="black"/>
+<rect x="5" y="4" width="1" height="1" fill="black"/>
+<path d="M94 2H90V3H89V7H90V8H94V7H95V3H94V2Z" fill="black"/>
+<path d="M93 3H91V4H90V6H91V7H93V6H94V4H93V3Z" fill="#93FCEE"/>
+<rect x="91" y="5" width="1" height="1" fill="black"/>
+<rect x="92" y="4" width="1" height="1" fill="black"/>
+<path d="M94 48H90V49H89V53H90V54H94V53H95V49H94V48Z" fill="black"/>
+<path d="M93 49H91V50H90V52H91V53H93V52H94V50H93V49Z" fill="#93FCEE"/>
+<rect x="91" y="51" width="1" height="1" fill="black"/>
+<rect x="92" y="50" width="1" height="1" fill="black"/>
+<path d="M7 48H3V49H2V53H3V54H7V53H8V49H7V48Z" fill="black"/>
+<path d="M6 49H4V50H3V52H4V53H6V52H7V50H6V49Z" fill="#93FCEE"/>
+<rect x="4" y="51" width="1" height="1" fill="black"/>
+<rect x="5" y="50" width="1" height="1" fill="black"/>
+</svg>
