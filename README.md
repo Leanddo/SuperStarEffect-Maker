@@ -15,7 +15,7 @@ Unleash your creativity with our user-friendly interface, allowing you to effort
 
 ⚠️ Epilepsy Warning: Flashing Lights and Visual Effects
 
-- GitHub Pages: [Github](https://leanddo.github.io/SuperStarEfect-Maker/)
+- GitHub Pages: [Github](https://leanddo.github.io/SuperStarEffect-Maker/)
 
 ## 🛠️ Built with
 
