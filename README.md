@@ -1,4 +1,4 @@
-# Super Star Efect Maker
+# ⭐ Super Star Effect Maker ⭐
 
 ![Avaliacao de produto](./.github/Previewgif.gif)
 
